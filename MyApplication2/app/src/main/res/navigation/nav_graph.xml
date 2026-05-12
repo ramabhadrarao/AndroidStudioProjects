@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/songListFragment">
+
+    <fragment
+        android:id="@+id/songListFragment"
+        android:name="com.example.myapplication.ui.SongListFragment"
+        android:label="Songs"
+        tools:layout="@layout/fragment_song_list">
+        <action
+            android:id="@+id/action_songListFragment_to_addSongFragment"
+            app:destination="@id/addSongFragment" />
+        <action
+            android:id="@+id/action_songListFragment_to_songDetailFragment"
+            app:destination="@id/songDetailFragment" />
+        <action
+            android:id="@+id/action_songListFragment_to_importSelectionFragment"
+            app:destination="@id/importSelectionFragment" />
+        <action
+            android:id="@+id/action_songListFragment_to_importPackageFragment"
+            app:destination="@id/importPackageFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/addSongFragment"
+        android:name="com.example.myapplication.ui.AddSongFragment"
+        android:label="Add Song"
+        tools:layout="@layout/fragment_add_song" />
+
+    <fragment
+        android:id="@+id/songDetailFragment"
+        android:name="com.example.myapplication.ui.SongDetailFragment"
+        android:label="Song Details"
+        tools:layout="@layout/fragment_song_detail">
+        <argument
+            android:name="songId"
+            app:argType="long" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/importSelectionFragment"
+        android:name="com.example.myapplication.ui.ImportSelectionFragment"
+        android:label="Import Files"
+        tools:layout="@layout/fragment_import_selection">
+        <argument
+            android:name="uris"
+            app:argType="android.net.Uri[]" />
+    </fragment>
+
+    <dialog
+        android:id="@+id/importPackageFragment"
+        android:name="com.example.myapplication.ui.ImportPackageFragment"
+        android:label="Import Song Package"
+        tools:layout="@layout/fragment_import_package">
+        <argument
+            android:name="zipUri"
+            app:argType="android.net.Uri" />
+    </dialog>
+
+    <fragment
+        android:id="@+id/practiceStatisticsFragment"
+        android:name="com.example.myapplication.ui.PracticeStatisticsFragment"
+        android:label="Statistics"
+        tools:layout="@layout/fragment_practice_statistics" />
+
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.myapplication.ui.ProfileFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_profile" />
+
+    <fragment
+        android:id="@+id/backupRestoreFragment"
+        android:name="com.example.myapplication.ui.BackupRestoreFragment"
+        android:label="Backup / Restore"
+        tools:layout="@layout/fragment_backup_restore" />
+</navigation>

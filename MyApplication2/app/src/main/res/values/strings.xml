@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Sangeeta Patham</string>
+    <string name="title_english">Title (English)</string>
+    <string name="title_telugu">పాట పేరు (తెలుగు)</string>
+    <string name="ragam_english">Ragam (English)</string>
+    <string name="ragam_telugu">రాగం (తెలుగు)</string>
+    <string name="talam_english">Talam (English)</string>
+    <string name="talam_telugu">తాళం (తెలుగు)</string>
+    <string name="composer_english">Composer (English)</string>
+    <string name="composer_telugu">వాగ్గేయకారుడు (తెలుగు)</string>
+    <string name="lyrics_english">Lyrics (English - Optional)</string>
+    <string name="lyrics_telugu">సాహిత్యం (తెలుగు)</string>
+    <string name="meaning">Meaning / Notes</string>
+    <string name="difficulty_level">Difficulty Level</string>
+    <string name="save_song">Save Song</string>
+    <string name="add_song">Add New Song</string>
+    <string name="practice">Practice</string>
+    <string name="attachments">Attachments</string>
+    <string name="start_practice">Start Practice</string>
+    <string name="stop_practice">Stop Practice</string>
+</resources>
